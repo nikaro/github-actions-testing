@@ -1,0 +1,19 @@
+name: Continuous integration
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  auto_tag:
+    name: Tag Releases
+    if: (github.event_name == 'push' && github.ref_type == 'branch') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: tamasfe/auto-tag@v5
+        with:
+          name: tamasfe
+          email: me@tamasfe.dev

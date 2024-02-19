@@ -1,0 +1,19 @@
+{
+    "name": "@taplo/cli",
+    "version": "0.7.1",
+    "description": "A TOML utility tool.",
+    "scripts": {
+      "build": "echo build",
+      "prepublish": "echo prepublish"
+    },
+    "homepage": "https://taplo.tamasfe.dev",
+    "repository": "https://github.com/tamasfe/taplo",
+    "author": {
+      "name": "tamasfe",
+      "url": "https://github.com/tamasfe"
+    },
+    "license": "MIT",
+    "autoTag": {
+      "enabled": true
+    }
+  }
